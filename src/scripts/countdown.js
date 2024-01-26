@@ -11,13 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const difference = targetDate - currentDate;
 
         // Calcula días, horas, minutos y segundos
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        //const days = Math.floor(difference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
         // Formatea y actualiza el contenido HTML con la cuenta regresiva
-        document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        //document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        document.getElementById('countdown').innerHTML = `${hours}h ${minutes}m ${seconds}s`;
 
         // Si la cuenta regresiva ha terminado, detén la actualización
         if (difference < 0) {
