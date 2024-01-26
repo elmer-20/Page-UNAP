@@ -560,6 +560,13 @@ video {
   }
 }
 
+@media (max-width: 768px){
+  .sunedu {
+    display: none;
+    background-color: black;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
