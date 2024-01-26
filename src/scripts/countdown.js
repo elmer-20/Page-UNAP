@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Define la fecha y hora objetivo
-    const targetDate = new Date("January 27, 2024 06:00:00").getTime();
+    const targetDate = new Date("January 27, 2024 06:30:00").getTime();
 
     // Actualiza la cuenta regresiva cada segundo
     const countdownInterval = setInterval(function () {
