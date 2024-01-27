@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Si la cuenta regresiva ha terminado, detén la actualización
         if (difference < 0) {
             clearInterval(countdownInterval);
-            document.getElementById('countdown').innerHTML = '¡Ya ha llegado!';
+            document.getElementById('countdown').innerHTML = '¡Llego la Hora!';
         }
     }, 1000);
 });
