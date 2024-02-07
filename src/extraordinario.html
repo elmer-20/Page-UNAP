@@ -1,195 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admisión</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/estilos.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    
+  </head>
 
+  <body>
     <header>
+      <div
+        style="
+          position: fixed;
+          top: 0px;
+          z-index: 100000;
+          background: white;
+          width: 100%;
+        "
+      >
         <nav class="wrapper h-20 flex items-center justify-between">
+          <a href="#" class="w-1/3 max-w-[140px]">
+            <img src="./images/logotiny.png" class="w-1/3" />
+          </a>
 
-            <a href="./" class="w-1/3 max-w-[140px]">
-                <img src="./images/logotiny.png" class="w-1/3">
-            </a>
+          <input type="checkbox" id="menu" class="peer hidden" />
 
-            <input type="checkbox" id="menu" class="peer hidden">
+          <label
+            for="menu"
+            class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"
+          ></label>
 
-            <label for="menu" class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden"></label>
+          <div
+            class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform z-40 md:static md:bg-none md:translate-x-0"
+          >
+            <ul
+              class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static"
+            >
+              <li>
+                <a href="#">Inicio</a>
+              </li>
 
-            <div class="fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full peer-checked:translate-x-0 transition-transform z-40 md:static md:bg-none md:translate-x-0">
+              <li>
+                <a href="#">Pregrado</a>
+              </li>
 
-                <ul class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static">
+              <li>
+                <a href="#">Inscripciones</a>
+              </li>
 
-                    <li>
-                        <a href="#">Inico</a>
-                    </li>
-        
-                    <li>
-                        <a href="#">Pregrado</a>
-                    </li>
-        
-                    <li>
-                        <a href="#">Inscripciones</a>
-                        
-                    </li>
-        
-                    <li>
-                        <a href="#">Resultados</a>
-                    </li>
-        
-                    
+              <li>
+                <a href="https://resultados.unap.edu.pe/">Resultados</a>
+              </li>
+            </ul>
+          </div>
+          <a href="./" class="w-1/3 max-w-[140px] sunedu">
+            <img src="./images/logo-sunedu.png" class="w-full" />
+          </a>
+        </nav>
+      </div>
+      <!-- Section: Design Block -->
 
-                </ul>
-                
-                
-            </div>
-            
-            <img src="./images/logo-sunedu.png" class="w-full">
-            
+      <section class="mb-30">
+        <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          style="
+            background-position: 50%;
+            background-image: url('./images/unapuno.png');
+            height: 100vh;
+          "
+        >
+          <div
+            class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.45)] bg-fixed"
+          >
+            <div class="flex h-full items-center justify-center">
+              <div class="px-6 text-center text-white md:px-12">
+                <h1
+                  class="mt-2 mb-16 text-4xl font-bold tracking-tight md:text-4xl xl:text-7xl"
+                >
+                  EXAMEN CEPRE UNA 2024-I<br />
+                </h1>
+                <br />
+                <!-- <section>
+                                <div class="text-center text-gray-50 flex-1">
+                                    <h1 class="text-4xl  font-bold mb-4 xl:text-6xl">LAS PUERTAS DE INGRESO SE ABRIRÁN EN:</h1>
+                                    <div id="countdown" class="text-5xl font-semibold mb-4 xl:text-7xl"></div>
+                                    <h1 class="text-4xl font-bold mb-4 xl:text-5xl">PARA LOS CLASIFICADOS AL SEGUNDO EXAMEN</h1>
+                                </div>                               
+                                <script src="./scripts/countdown.js"></script>
+                            </section> -->
 
-
-            
-        </nav>    
-          <!-- Section: Design Block -->
-
-        
-
-        
-        <section class="mb-30  ">
-        
-                <div class="relative overflow-hidden bg-cover bg-no-repeat" style="
-                            background-position: 50%;
-                            background-image: url('./images/unapuno.png');
-                            height: 500px;
-                        ">
-                        <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.45)] bg-fixed">
-                        <div class="flex h-full items-center justify-center">
-                            <div class="px-6 text-center text-white md:px-12">
-                            <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-                                Admisión 2024<br />
-                                
-                            </h1>
-                            <br />
-                                
-                            <p>pre-inscripciones aqui</p>
-                            <br />
-                            <a href="https://inscripciones.admision.unap.edu.pe/preinscripcion-general">
-                                <button type="button" class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200" data-te-ripple-init data-te-ripple-color="light">
-                                    inscripción cepre
-                                </button>
-                            </a>
-                            </div>
-                        </div>
-                        </div>
-
+                <div>
+                  <a href="https://resultados.unap.edu.pe/">
+                    <button
+                      type="button"
+                      class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] font-medium uppercase leading-normal text-2xl text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
+                    >
+                      RESULTADOS
+                    </button> </a
+                  ><br />
+                  <br />
+                  <br />
+                  <br />
+                  <a
+                    href="https://inscripciones.admision.unap.edu.pe/ver-puntaje-alcanzado"
+                  >
+                    <button
+                      type="button"
+                      class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] font-medium uppercase leading-normal text-1xl text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
+                    >
+                      CONSULTA TU PUNTAJE
+                    </button>
+                  </a>
                 </div>
-
-        
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     
-
     <main>
 
-        <section class="wrapper grid gap-8 justify-items-center items-center pb-12 md:grid-cols-1 md:py-12">
-           
 
-            <article class="text-center space-y-6 md:text-left md:space-y-8">
+      <section class="container mx-auto py-20">
+        <div class="flex flex-wrap justify-center">
+          <!-- Tarjeta 1 -->
+          <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+            <div class="max-w-sm overflow-hidden rounded shadow-lg h-[400px]">
+              <img
+                class="mx-auto max-w-20"
+                src="./images/primeros puestos.png"
+                alt="Primeros"
+              />
+              <div class="px-6 py-4">
+                <div class="mb-2 text-xl font-bold">
+                  PRIMEROS PUESTOS (EBR, EBA o COAR)
+                </div>
+                <p class="text-base text-gray-700">
+                  Pueden postular los estudiantes que ocuparon los 2 primeros
+                  puestos de Instituciones (EBR, EBA) Públicas o Privadas a
+                  nivel nacional, y es vigente solo por 2 años consecutivos y
+                  valido por solo una vez luego de su egreso. Además, los
+                  egresados de la promoción del año anterior del COAR.
+                </p>
+              </div>
+              <div class="px-6 pb-2 pt-4">
+                <div class="flex justify-center">
+                  <button
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    Más Información
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                <h1 class="text-4xl font-bold text-cyan-800 md:text-5xl">Examen de Admisión EXTRAORDINARIO 2024-I.(23 de febrero)
-                </h1> 
-                <h2 class="text-4xl  text-cyan-900">
-                    Requisitos:
+          <!-- Repite este bloque de código cinco veces más para un total de seis tarjetas -->
+          <!-- Tarjeta 2 -->
+          <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+            <div class="max-w-sm overflow-hidden rounded shadow-lg h-[400px]">
+              <img
+                class="mx-auto max-w-20"
+                src="https://i.imgur.com/gKZTp90.png"
+                alt="Primeros"
+              />
+              <div class="px-6 py-4">
+                <div class="mb-2 text-xl font-bold">GRADUADOS O TITULADOS</div>
+                <p class="text-base text-gray-700">
+                  Pueden postular los graduados o titulados en una universidad
+                  peruana y los titulados de instituciones con rango
+                  universitario señalados en la Ley Universitaria N° 30220.
+                </p>
+              </div>
+              <div class="px-6 pb-2 pt-4">
+                <div class="flex justify-center">
+                  <button
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    Más Información
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                </h2>
+          <!-- Tarjeta 3 -->
+          <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+            <div class="max-w-sm overflow-hidden rounded shadow-lg h-[400px]">
+              <img
+                class="mx-auto max-w-20"
+                src="https://i.imgur.com/gKZTp90.png"
+                alt="Primeros"
+              />
+              <div class="px-6 py-4">
+                <div class="mb-2 text-xl font-bold">TRASLADO INTERNO</div>
+                <p class="text-base text-gray-700">
+                  Pueden postular los estudiantes con matrícula vigente que
+                  hayan aprobado mínimamente 4 semestres o 72 créditos. Solo
+                  procede el traslado a un programa de estudio del mismo área
+                  que pertenece el programa de origen.
+                </p>
+              </div>
+              <div class="px-6 pb-2 pt-4">
+                <div class="flex justify-center">
+                  <button
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    Más Información
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                <li class="text-blue-950" >
-                    Comprobante de pago por derecho de carpeta 20s/.
-                    
-                    <ul class="font-bold text-red-600">
-                        Tasas Educativas de la UNA-Puno, código 26.
-                    </ul>
-                    
-                </li>
-                <li class="text-blue-950 " >
-                    Constancia de no adeudar.
-                    
-                </li>
+          <!-- Tarjeta 4 -->
+          <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+            <div class="max-w-sm overflow-hidden rounded shadow-lg h-[400px]">
+              <img
+                class="mx-auto max-w-20"
+                src="https://i.imgur.com/gKZTp90.png"
+                alt="Primeros"
+              />
+              <div class="px-6 py-4">
+                <div class="mb-2 text-xl font-bold">TRASLADO EXTERNO</div>
+                <p class="text-base text-gray-700">
+                  Pueden postular los estudiantes de universidades públicas o
+                  privadas del país o del extranjero que hayan aprobado
+                  mínimamente 4 semestres académicos o 72 créditos de la
+                  universidad de origen.
+                </p>
+              </div>
+              <div class="px-6 pb-2 pt-4">
+                <div class="flex justify-center">
+                  <button
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    Más Información
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                <li class="text-blue-950 " >
-                    Comprobante de pago de examen MEDICO. <ul class="font-bold text-red-600">Tasas Educativas de la UNA-Puno, código 39. (Solo para los postulantes a los Programas de Estudio de Medicina Humana o Educación Física.)
-                    </ul>
-                </li>
+          <!-- Tarjeta 5 -->
+          <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+            <div class="max-w-sm overflow-hidden rounded shadow-lg h-[400px]">
+              <img
+                class="mx-auto max-w-20"
+                src="https://i.imgur.com/gKZTp90.png"
+                alt="Primeros"
+              />
+              <div class="px-6 py-4">
+                <div class="mb-2 text-xl font-bold">DEPORTISTAS DESTACADOS</div>
+                <p class="text-base text-gray-700">
+                  Pueden postular egresados de EBR, EBA, que tengan acreditación
+                  vigente (no mayor de 2 años de antigüedad), otorgado por el
+                  IPD como DC, DECAN y DANDI.
+                </p>
+              </div>
+              <div class="px-6 pb-2 pt-4">
+                <div class="flex justify-center">
+                  <button
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    Más Información
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                
-               
-
-            </article>
-            <article text-center space-y-6 md:text-left md:space-y-8>
-                <h2 class="text-3xl text-center text-cyan-900 py-2">
-                    ¡Ahora ya puedes pagar en.!
-
-                </h2>
-                
-            
-                <img src="./images/pagar.svg" class="justify-items-center w-full max-w-lg md:order-1">
-                
-            </article>
-
-        </section>
-
-
+          <!-- Tarjeta 6 -->
+          <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+            <div class="max-w-sm overflow-hidden rounded shadow-lg h-[400px]">
+              <img
+                class="mx-auto max-w-20"
+                src="https://i.imgur.com/gKZTp90.png"
+                alt="Primeros"
+              />
+              <div class="px-6 py-4">
+                <div class="mb-2 text-xl font-bold">
+                  BENEFICIARIOS DEL PLAN INTEGRAL DE REPARACIONES(PIR)
+                </div>
+                <p class="text-base text-gray-700">
+                  Pueden postular a una vacante de un programa de estudios, los
+                  beneficiarios del PIR y están exonerados de todo pago.
+                </p>
+              </div>
+              <div class="px-6 pb-2 pt-4">
+                <div class="flex justify-center">
+                  <button
+                    class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    Más Información
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <footer class="bg-very-dark-blue py-12 md:py-24">
+      <section
+        class="wrapper grid gap-12 justify-center md:justify-items-center md:grid-cols-3"
+      >
+        <nav
+          class="grid grid-cols-[max-content_max-content] gap-y-4 justify-between text-white w-4/5 md:w-full"
+        >
+          <a href="#">Inicio</a>
+          <a href="#">Pregrado</a>
+          <a href="#">Inscripciones</a>
+          <a href="#">Resultados</a>
+        </nav>
 
-
-
-    <footer class="bg-very-dark-blue py-24">
-        <section class="wrapper grid gap-12 justify-items-center footer-area md:footer-area-md md:grid-cols-3 md:justify-items-stretch">
-
-
-            <nav class="grid 
-            grid-cols-[max-content_max-content] gap-y-4 justify-between text-white w-4/5 [grid-area:navigation] md:w-full">
-                <a href="#">Inicio</a>
-                <a href="#">Pregrado</a>
-                <a href="#">Inscripciones</a>
-                <a href="#">Resultados</a>
-                
-            </nav>
-
-            <div class="flex flex-wrap gap-4 justify-between w-full [grid-area:social-media]">
-
-                <a href="#">
-                    <img src="./images/icon-facebook.svg" class="w-8">
-                </a>
-                <a href="#">
-                    <img src="./images/icon-youtube.svg" class="w-8">
-                </a>
-                <a href="#">
+        <div
+          class="flex flex-wrap gap-8 justify-center w-full md:justify-between md:mx-16"
+        >
+          <a href="https://web.facebook.com/dadunapuno/?_rdc=1&_rdr">
+            <img src="./images/icon-facebook.svg" class="w-8" />
+          </a>
+          <a href="#">
+            <img src="./images/icon-youtube.svg" class="w-8" />
+          </a>
+          <!-- <a href="#">
                     <img src="./images/icon-twitter.svg" class="w-8">
-                </a>
-                <a href="#">
+                </a> -->
+          <!-- <a href="#">
                     <img src="./images/icon-pinterest.svg" class="w-8">
-                </a>
-                <a href="#">
-                    <img src="./images/icon-instagram.svg"  class="w-8">
-                </a>
+                </a> -->
+          <a href="#">
+            <img src="./images/icon-instagram.svg" class="w-8" />
+          </a>
+        </div>
 
-            </div>
-
-           
-
-            <p class="text-dark-grayish-blue text-center [grid-area:copy] md:text-right"></p>
-        </section>
+        <p class="text-dark-grayish-blue text-center md:text-right">
+          &copy; 2023 Dirección de Admisión. Todos los derechos reservados.
+        </p>
+      </section>
     </footer>
-
-    
-
-    
-</body>
+  </body>
 </html>
