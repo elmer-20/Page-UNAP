@@ -11,9 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/estilos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
-<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/49833/main.css'><link rel="stylesheet" href="./css/add.css">
+
     
   </head>
 
@@ -47,7 +45,7 @@
               class="absolute inset-x-0 top-24 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 font-bold text-dark-blue shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static"
             >
               <li>
-                <a href="#">Inicio</a>
+                <a href="index.html">Inicio</a>
               </li>
 
               <li>
@@ -138,88 +136,207 @@
 
 
 
-      <article class="article">
-        <div class="grid__item--1of1 text-center">
-          <h2>Modalidades Examen Extraordinario 2024</h2>
-          <div class="tabs">
-            <input type="radio" name="tabs" id="tab1" checked>
-            <label for="tab1">
-              <img src="./images/more/primeros puestos.png" alt="Icono" width="50" height="50"><span>Primeros Puestos(EBR, EBA o COAR)</span>
-            </label>
-            <input type="radio" name="tabs" id="tab2">
-            <label for="tab2">
-              <img src="./images/more/graduados.png" alt="Icono" width="50" height="50"><span>Graduados o Titulados</span>
-            </label>
-            <input type="radio" name="tabs" id="tab3">
-            <label for="tab3">
-              <img src="./images/more/interno.png" alt="Icono" width="50" height="50"><span> Traslado Interno</span>
-            </label>
-            <input type="radio" name="tabs" id="tab4">
-            <label for="tab4">
-              <img src="./images/more/externo.png" alt="Icono" width="50" height="50"><span>Traslado Externo</span>
-            </label>
-            <input type="radio" name="tabs" id="tab5">
-            <label for="tab5">
-              <img src="./images/more/deportistas.png" alt="Icono" width="50" height="50"><span>Deportistas Destacado</span>
-            </label>
-            <input type="radio" name="tabs" id="tab6">
-            <label for="tab6">
-              <img src="./images/more/pir.png" alt="Icono" width="50" height="50"><span>Beneficiarios del Plan Integral de Reparaciones(PIR)</span>
-            </label>
-            <div id="tab__content--1" class="tab__content">
-              <p>Pueden postular los estudiantes que ocuparon los 2 primeros
-                puestos de Instituciones (EBR, EBA) Públicas o Privadas a nivel
-                nacional, y es vigente solo por 2 años consecutivos y valido por
-                solo una vez luego de su egreso. Además, los egresados de la
-                promoción del año anterior del COAR.</p>
-              <img src="./images/more/2.jpg" alt="" />
+
+
+<section class="bg-gray-50 ">
+    <div class="container px-6 py-10 mx-auto">
+        <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl "> Modalidades Examen Extraordinario 2024</span></h1>
+
+        <!-- <p class="mt-4 text-gray-500 xl:mt-6 ">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
+        </p> -->
+
+        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
+            <div class="space-y-3">
+              <span class="inline-block p-3 text-blue-600 bg-blue-100 rounded-full">
+                <img src="images/more/primeros puestos.png" alt="Icono de sombrero de graduado" class="w-6 h-6">
+            </span>
+
+                <h1 class="text-xl font-semibold text-gray-700 capitalize ">Primeros Puestos(EBR, EBA o COAR)</h1>
+
+                <p class="text-gray-500 ">
+                  Pueden postular los estudiantes que ocuparon los 2 primeros
+                  puestos de Instituciones (EBR, EBA) Públicas o Privadas a nivel
+                  nacional, y es vigente solo por 2 años consecutivos y valido por
+                  solo una vez luego de su egreso. Además, los egresados de la
+                  promoción del año anterior del COAR.
+                </p>
+
+                <a id="openPopup" href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform  hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                    <span class="mx-1">Requisitos y montos</span>
+                    <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div id="popup" class="fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50 hidden">
+                  <div class="bg-white p-8 rounded shadow-lg">
+                    <span id="closePopup" class="absolute top-0 right-0 text-gray-600 cursor-pointer hover:text-gray-900">&times;</span>
+                    <img src="images/more/2.jpg" alt="Placeholder Image" class="w-full h-auto">
+                  </div>
+                </div>
             </div>
-            <div id="tab__content--2" class="tab__content">
-              <p>Pueden postular los graduados o titulados de una universidad
-                peruana o del extranjero y los titulados de instituciones con
-                rango universitario señalados en la Ley Universitaria N°
-                30220.
-              </p>
-              <img src="./images/more/3.jpg" alt="" />
+
+
+
+
+            <div class="space-y-3">
+              <span class="inline-block p-3 text-blue-600 bg-blue-100 rounded-full">
+                <img src="images/more/graduados.png" alt="Icono de sombrero de graduado" class="w-6 h-6">
+            </span>
+
+                <h1 class="text-xl font-semibold text-gray-700 capitalize ">Graduados o Titulados</h1>
+
+                <p class="text-gray-500 ">
+                  Pueden postular los graduados o titulados de una universidad
+                  peruana o del extranjero y los titulados de instituciones con
+                  rango universitario señalados en la Ley Universitaria N°
+                  30220.
+                </p>
+
+                <a id="openPopup1" href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform  hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                    <span class="mx-1">Requisitos y montos</span>
+                    <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div id="popup1" class="fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50 hidden">
+                  <div class=" bg-white p-8 rounded shadow-lg">
+                    <span id="closePopup1" class="absolute top-0 right-0 text-gray-600 cursor-pointer hover:text-gray-900">&times;</span>
+                    <img src="images/more/3.jpg" alt="Placeholder Image" class="w-full h-auto">
+                  </div>
+                </div>
+                
             </div>
-            <div id="tab__content--3" class="tab__content">
-              <p>Pueden postular los estudiantes con matrícula vigente que
+
+
+
+
+
+
+
+            <div class="space-y-3">
+              <span class="inline-block p-3 text-blue-600 bg-blue-100 rounded-full">
+                <img src="images/more/interno.png" alt="Icono de sombrero de graduado" class="w-6 h-6">
+            </span>
+
+                <h1 class="text-xl font-semibold text-gray-700 capitalize ">Traslado Interno</h1>
+
+                <p class="text-gray-500 ">
+                  Pueden postular los estudiantes con matrícula vigente que
                 hayan aprobado mínimamente 4 semestres o 72 créditos.
                 Solo procede el traslado a un programa de estudio del mismo
                 área que pertenece el programa de origen.
-              </p>
-              <img src="./images/more/4.jpg" alt="" />
+                </p>
+
+                <a id="openPopup2" href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform  hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                    <span class="mx-1">Requisitos y montos</span>
+                    <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div id="popup2" class="fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50 hidden">
+                  <div class=" bg-white p-8 rounded shadow-lg">
+                    <span id="closePopup2" class="absolute top-0 right-0 text-gray-600 cursor-pointer hover:text-gray-900">&times;</span>
+                    <img src="images/more/4.jpg" alt="Placeholder Image" class="w-full h-auto">
+                  </div>
+                </div> 
             </div>
-            <div id="tab__content--4" class="tab__content">
-              <p>Pueden postular los estudiantes de universidades públicas o
-                privadas del país o del extranjero que hayan aprobado
-                mínimamente 4 semestres académicos o 72 créditos de la
-                universidad de origen.
-              </p>
-              <img src="./images/more/5.jpg" alt="" />
+
+
+
+            <div class="space-y-3">
+              <span class="inline-block p-3 text-blue-600 bg-blue-100 rounded-full">
+                <img src="images/more/externo.png" alt="Icono de sombrero de graduado" class="w-6 h-6">
+            </span>
+
+                <h1 class="text-xl font-semibold text-gray-700 capitalize ">Traslado Externo</h1>
+
+                <p class="text-gray-500 ">
+                  Pueden postular los estudiantes de universidades públicas o
+                  privadas del país o del extranjero que hayan aprobado
+                  mínimamente 4 semestres académicos o 72 créditos de la
+                  universidad de origen.
+                </p>
+
+                <a id="openPopup3" href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform  hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                    <span class="mx-1">Requisitos y montos</span>
+                    <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div id="popup3" class="fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50 hidden">
+                  <div class=" bg-white p-8 rounded shadow-lg">
+                    <span id="closePopup3" class="absolute top-0 right-0 text-gray-600 cursor-pointer hover:text-gray-900">&times;</span>
+                    <img src="images/more/5.jpg" alt="Placeholder Image" class="w-full h-auto">
+                  </div>
+                </div> 
             </div>
-            <div id="tab__content--5" class="tab__content">
-              <p>Pueden postular egresados de EBR, EBA, que tengan
+
+
+
+
+            <div class="space-y-3">
+              <span class="inline-block p-3 text-blue-600 bg-blue-100 rounded-full">
+                <img src="images/more/deportistas.png" alt="Icono de sombrero de graduado" class="w-6 h-6">
+            </span>
+
+                <h1 class="text-xl font-semibold text-gray-700 capitalize ">Deportistas Destacado</h1>
+
+                <p class="text-gray-500 ">
+                  Pueden postular egresados de EBR, EBA, que tengan
                 acreditación vigente (no mayor de 2 años de antigüedad),
-                otorgado por el IPD como DC, DECAN y DANDI.</p>
-              <img src="./images/more/6.jpg" alt="" />
+                otorgado por el IPD como DC, DECAN y DANDI.
+                </p>
+
+                <a id="openPopup4" href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform  hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                    <span class="mx-1">Requisitos y montos</span>
+                    <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div id="popup4" class="fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50 hidden">
+                  <div class=" bg-white p-8 rounded shadow-lg">
+                    <span id="closePopup4" class="absolute top-0 right-0 text-gray-600 cursor-pointer hover:text-gray-900">&times;</span>
+                    <img src="images/more/6.jpg" alt="Placeholder Image" class="w-full h-auto">
+                  </div>
+                </div> 
             </div>
-            <div id="tab__content--6" class="tab__content">
-              <p>Pueden postular a una vacante de un programa de estudios,
-                los beneficiarios del PIR y están exonerados de todo pago.</p>
-              <img src="./images/more/7.jpg" alt="" />
+
+
+
+
+            <div class="space-y-3">
+              <span class="inline-block p-3 text-blue-600 bg-blue-100 rounded-full">
+                <img src="images/more/pir.png" alt="Icono de sombrero de graduado" class="w-6 h-6">
+            </span>
+
+                <h1 class="text-xl font-semibold text-gray-700 capitalize ">Beneficiarios del Plan Integral de Reparaciones(PIR)</h1>
+
+                <p class="text-gray-500 ">
+                  Pueden postular a una vacante de un programa de estudios,
+                  los beneficiarios del PIR y están exonerados de todo pago.
+                </p>
+
+                <a id="openPopup5" href="#" class="inline-flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform  hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                    <span class="mx-1">Requisitos y montos</span>
+                    <svg class="w-4 h-4 mx-1 rtl:-scale-x-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <div id="popup5" class="fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50 hidden">
+                  <div class=" bg-white p-8 rounded shadow-lg">
+                    <span id="closePopup5" class="absolute top-0 right-0 text-gray-600 cursor-pointer hover:text-gray-900">&times;</span>
+                    <img src="images/more/7.jpg" alt="Placeholder Image" class="w-full h-auto">
+                  </div>
+                </div> 
             </div>
-          </div>
+
+
+
+
+
+
+        
+
+
+
+
+            
         </div>
-      </article>
+    </div>
+</section>
 
 
 
-
-
-
-
-
+<script src="scripts/popup.js"></script>   
 
 
 
