@@ -2025,3 +2025,55 @@ video {
     color: rgb(59 130 246 / var(--tw-text-opacity));
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos del modal */
+.modal {
+  display: none; /* Ocultar el modal por defecto */
+  position: fixed; /* Posición fija */
+  z-index: 1; /* Ubicación en el eje Z */
+  padding-top: 100px; /* Espacio en la parte superior */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho del modal */
+  height: 100%; /* Altura del modal */
+  overflow: auto; /* Permite desplazarse si el contenido es muy grande */
+  background-color: rgb(0,0,0); /* Fondo negro */
+  background-color: rgba(0,0,0,0.9); /* Fondo negro con transparencia */
+}
+
+/* Contenido del modal */
+.modal-content {
+  margin: auto; /* Centrar el contenido horizontalmente */
+  display: block; /* Hacer que la imagen sea un bloque */
+  max-width: 80%; /* Ancho máximo */
+  max-height: 80%; /* Altura máxima */
+}
+
+/* Botón para cerrar el modal */
+.close {
+  position: absolute; /* Posición absoluta */
+  top: 15px; /* Distancia desde arriba */
+  right: 35px; /* Distancia desde la derecha */
+  color: #f1f1f1; /* Color del texto */
+  font-size: 40px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  transition: 0.3s; /* Transición suave */
+}
+
+/* Estilos del botón al pasar el mouse */
+.close:hover,
+.close:focus {
+  color: #bbb; /* Color del texto al pasar el mouse */
+  text-decoration: none; /* Sin subrayado */
+  cursor: pointer; /* Cursor de tipo puntero */
+}

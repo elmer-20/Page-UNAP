@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Define la fecha y hora objetivo
-    const targetDate = new Date("January 28, 2024 12:00:00").getTime();
+    const targetDate = new Date("February 23, 2024 14:00:00").getTime();
 
     // Actualiza la cuenta regresiva cada segundo
     const countdownInterval = setInterval(function () {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const difference = targetDate - currentDate;
 
         // Calcula días, horas, minutos y segundos
-        //const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
