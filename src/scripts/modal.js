@@ -31,7 +31,7 @@ let span = document.getElementsByClassName("close")[0];
 // Cuando se hace clic en el botón, abrir el modal
 btn.onclick = function() {
   modal.style.display = "block";
-  modalImg.src = "/src/images/ficha1.jpg"; // Reemplaza "imagen.jpg" con la ruta de tu imagen
+  modalImg.src = "/images/ficha1.jpg"; // Reemplaza "imagen.jpg" con la ruta de tu imagen
 }
 
 // Cuando se hace clic en <span> (x), cerrar el modal
