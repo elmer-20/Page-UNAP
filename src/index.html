@@ -47,7 +47,7 @@
                         </li>
 
                         <li>
-                            <a href="https://resultados.unap.edu.pe/">Resultados CEPRE 2024-I</a>
+                            <a href="https://resultados.unap.edu.pe/">Resultados Extraordinario 2024</a>
                         </li>
             
                         
@@ -77,6 +77,36 @@
         <script src="./scripts/modal.js"></script>  -->
 
         
+        <!-- Modal -->
+        <div id="myModal" class="modal fixed inset-0 flex items-center justify-center hidden">
+            <div class="modal-overlay absolute inset-0 bg-gray-900 opacity-50"></div>
+        
+            <div class="modal-container bg-white w-full md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                <!-- Contenido del modal -->
+                <div class="modal-content py-4 text-left px-6">
+                    <div class="flex justify-between items-center pb-3">
+                        <p>¡COMUNICADO IMPORTANTE PARA INGRESANTES DEL EXAMEN EXTRORDINARIO! <br>
+                        Aquellos postulantes que alcanzaron una vacante, deben seguir los siguientes pasos y cumplir con lo requisitos establecidos.
+                        <br>
+                        <a class="text-cyan-500" href="https://inscripciones.admision.unap.edu.pe/ver-puntaje-alcanzado">👉LINK PARA SUBIR LOS DOCUMENTOS REQUERIDOS EN FORMATO PDF</a>
+                        <br>📢CUMPLIR CON EL CRONOGRAMA DE CONTROL BIOMÉTRICO PARA EVITAR INCONVENIENTES.</p>
+                        <div id="close-modal" class="modal-close cursor-pointer">
+                            <svg class="fill-current text-red-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5.305 5.304a.5.5 0 0 0-.708.707l7.696 7.696a.5.5 0 0 0 .708 0l1.895-1.896a.5.5 0 0 0 0-.708L6.301 5.304a.5.5 0 0 0-.708 0z"/>
+                                <path d="M12.697 5.304a.5.5 0 0 1 .708.707L5.709 14.707a.5.5 0 0 1-.708 0L3.106 13.81a.5.5 0 0 1 0-.708l7.696-7.696a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+        
+                    <img src="./images/extra-requisitos.jpg" alt="modal">
+                </div>
+                <!-- Fin del contenido del modal -->
+            </div>
+        </div>
+        
+  <!-- Fin del modal -->
+  <script src="./scripts/modal.js"></script>
+  
 
         
 
@@ -88,13 +118,13 @@
         
         <section class="mb-30  ">
 
-            <div class="relative overflow-hidden bg-cover bg-no-repeat" style="
+            <div class="static overflow-hidden bg-cover bg-no-repeat" style="
                             background-position: 50%;
                             background-image: url('./images/unapuno.png');
                             height: 100vh;
                         ">
                 <div
-                    class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.45)] bg-fixed">
+                    class="static top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.45)] bg-fixed">
                     <div class="flex h-full items-center justify-center">
                         <div class="px-6 text-center text-white md:px-12">
                             <h1 class="mt-2 mb-16 text-4xl font-bold tracking-tight md:text-4xl xl:text-7xl">
@@ -142,6 +172,7 @@
                                 </a> -->
                                 <!-- <br>
                                 <script src="./scripts/modal.js"></script>  -->
+                                <br>
                                 <a href="https://inscripciones.admision.unap.edu.pe/general-2024-I/preinscripcion">
                                     <button type="button"
                                         class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px]  font-medium uppercase leading-normal text-xl text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
@@ -150,6 +181,11 @@
                                     </button>
                                 </a>
                                 <br>
+                    
+
+                            </div>
+                            <br>
+                            <!-- <div>
                                 <a href="https://admision.unap.edu.pe/resultados.txt">
                                     <button type="button"
                                         class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px]  font-medium uppercase leading-normal text-xl text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
@@ -157,8 +193,7 @@
                                         RESULTADOS EXAMEN EXTRAORDINARIO 2024
                                     </button>
                                 </a>
-
-                            </div>
+                            </div> -->
                             
                         </div>
                     </div>
@@ -631,7 +666,7 @@
 
         <section >
             <div class=" n-h-screen flex-col justify-center overflow-hidden bg-blue-50 py-3 sm:py-12">
-                <div class="relative bg-white px-6 pt-10 pb-10 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-7xl sm:rounded-lg sm:px-10">
+                <div class="static bg-white px-6 pt-10 pb-10 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-7xl sm:rounded-lg sm:px-10">
                     <div class="mx-auto max-w-9xl">
                         <h1 class="text-red-500 text-3xl">¡IMPORTANTE!</h1>
                         <div class="divide-y divide-gray-300/50">

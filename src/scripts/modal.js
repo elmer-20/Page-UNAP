@@ -23,7 +23,7 @@ window.onclick = function(event) {
 
 
 // Obtener elementos del DOM
-let modal = document.getElementById('myModal');
+/*let modal = document.getElementById('myModal');
 let modalImg = document.getElementById("img01");
 let btn = document.getElementById("openModalBtn");
 let span = document.getElementsByClassName("close")[0];
@@ -68,4 +68,17 @@ window.onclick = function(event) {
   } else if (event.target == modal1) {
     modal1.style.display = "none";
   }
-}
+}*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Muestra el modal al cargar la página
+  document.getElementById('myModal').classList.remove('hidden');
+
+  // Cierra el modal al hacer clic en el botón de cerrar o en el fondo oscuro
+  document.getElementById('close-modal').addEventListener('click', function(){
+    document.getElementById('myModal').classList.add('hidden');
+  });
+  document.querySelector('.modal-overlay').addEventListener('click', function(){
+    document.getElementById('myModal').classList.add('hidden');
+  });
+});
